@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivraj Shivaji Patil - E-Portfolio</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1565c0, #42a5f5);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .profile {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .profile img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #90caf9;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #bbdefb;
+      padding: 0.5rem;
+    }
+
+    nav button {
+      background-color: white;
+      border: 2px solid #64b5f6;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #64b5f6;
+      color: white;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      display: none;
+      animation: slide 0.6s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    @keyframes slide {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h2 {
+      text-align: center;
+      color: #1565c0;
+    }
+
+    .img-banner {
+      width: 100%;
+      border-radius: 12px;
+      margin: 10px 0 20px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #e3f2fd;
+    }
+
+    a {
+      color: #1565c0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact card styling */
+    .contact-card {
+      background: #e3f2fd;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: left;
+      font-size: 18px;
+    }
+
+    .contact-card p {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-card i {
+      color: #1565c0;
+      font-size: 20px;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>My Creative Student E-Portfolio</header>
+
+  <div class="profile">
+    <img src="https://uploads.onecompiler.io/44376gscy/44376g2vv/WhatsApp%20Image%202025-10-31%20at%2012.00.59%20AM.jpeg" />
+    <h3>Shivraj Shivaji Patil</h3>
+    <p>B.Tech (ROBOTICS AND AI) Student | ADCET, Ashta</p>
+  </div>
+
+  <nav>
+    <button onclick="showSection('intro')">Self Introduction</button>
+    <button onclick="showSection('resume')">Resume</button>
+    <button onclick="showSection('career')">Career Goals</button>
+    <button onclick="showSection('learning')">Learning from PCS</button>
+    <button onclick="showSection('myself')">Self Analysis</button>
+    <button onclick="showSection('reflection')">Reflection</button>
+    <button onclick="showSection('achievements')">Achievements</button>
+    <button onclick="showSection('contact')">Contact Information</button>
+  </nav>
+
+  <main>
+   <section id="intro" class="active">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="intro-container">
+    
+    <div class="intro-image">
+      <img src="https://uploads.onecompiler.io/44376gscy/4439c72t6/istockphoto-966248982-612x612.jpg" class="img-banner" />
+ </div>
+
+    <div class="intro-content">
+      <p>
+        Hello, I'm <strong>Shivraj Shivaji Patil</strong>, a passionate student pursuing a Bachelor's degree in 
+        <strong>Robotics and Artificial Intelligence</strong>.
+      </p>
+
+      <p>
+        I am highly interested in technology, especially in the fields of AI, robotics, and innovative software development. 
+        I have actively participated in <strong>10 to 12 hackathons</strong>, where I developed strong 
+        <strong>teamwork</strong> and <strong>leadership</strong> skills.
+      </p>
+
+      <p>
+        As a team leader in multiple events, I have guided my team to build creative and practical solutions under pressure.
+      </p>
+
+      <p>
+        I have worked on real-world projects like a <strong>real-time chat application</strong>, 
+        <strong>e-learning platform UI</strong>, and a <strong>personal portfolio website</strong>, 
+        which helped me improve my frontend development, problem-solving, and system design skills.
+      </p>
+
+      <p>
+        I am a quick learner, a dedicated team player, and always eager to explore new technologies and challenges.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <img class="img-banner" src="https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_1280.jpg" alt="Coding Image">
+      <h3>Career Objective:</h3>
+      <p>To obtain knowledge and improve my professional communication and technical skills to contribute to my organization and personal growth.</p>
+
+      <h3>Educational Qualification:</h3>
+      <table>
+        <tr>
+          <th>Qualification</th>
+          <th>School/College</th>
+          <th>Board/University</th>
+          <th>Year</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td>B.Tech (Robotics and AI)</td>
+          <td>ADCET, Ashta</td>
+          <td>Shivaji University</td>
+          <td>Pursuing</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>Shahu College</td>
+          <td>State Board</td>
+          <td>2025</td>
+          <td>71.50%</td>
+        </tr>
+        <tr>
+          <td>SSC</td>
+          <td>Mohare Highschool</td>
+          <td>State Board</td>
+          <td>2023</td>
+          <td>80.60%</td>
+        </tr>
+      </table>
+
+      <h3>Skills:</h3>
+      <ul>
+        <li>Good communication and presentation skills</li>
+        <li>Basic knowledge of computer and robotics</li>
+        <li>Teamwork and leadership ability</li>
+<li>HTML, CSS, JavaScript</li>
+<li>AI Basics</li>
+<li>Problem Solving</li>
+<li><strong>10 to 12 Hackathons</strong></li>
+<li>Frontend Developer</li>
+</ul>
+    </section>
+
+    <section id="career">
+  <h2 class="section-title">Career Goals</h2>
+
+  <div class="career-container">
+
+    <!-- Short Term -->
+    <div class="career-card">
+      <i class="fas fa-bullseye"></i>
+      <h3>Short-Term Goal</h3>
+      <p>
+        To strengthen my skills in Robotics and AI by building real-world projects 
+        and actively participating in hackathons to gain practical experience.
+      </p>
+    </div>
+
+    <!-- Long Term -->
+    <div class="career-card">
+      <i class="fas fa-rocket"></i>
+      <h3>Long-Term Goal</h3>
+      <p>
+        To become a skilled Robotics and AI Engineer and develop innovative 
+        solutions that solve real-world problems and create a positive impact.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <section id="learning">
+      <h2>Learning from PCS</h2>
+      <img src="https://uploads.onecompiler.io/44376gscy/443ur622n/images.jpg" class="img-banner" />
+      <p>Through the <strong>Professional Communication Skills (PCS)</strong> course, I have learned how to speak confidently, write effectively, and express my thoughts clearly. It helped me understand teamwork, presentation, and interview skills.</p>
+    </section>
+
+    <section id="myself">
+      <h2>Myself Analysis (SWOT)</h2>
+      <h3>Strengths ??</h3>
+      <ul>
+        <li>Good at logical thinking and problem-solving</li>
+        <li>Strong teamwork and leadership abilities</li>
+        <li>Quick learner with curiosity for technology</li>
+      </ul>
+
+      <h3>Weaknesses ??</h3>
+      <ul>
+        <li>Sometimes overthink situations</li>
+        <li>Get angry easily under pressure</li>
+      </ul>
+
+      <h3>Opportunities ??</h3>
+      <ul>
+        <li>To lead a company in AI and Robotics field</li>
+        <li>To get internships and participate in hackathons</li>
+        <li>To build my own startup in the future</li>
+      </ul>
+
+      <h3>Threats ??</h3>
+      <ul>
+        <li>High competition in my field</li>
+        <li>Time limitations during projects</li>
+        <li>Health and work-life balance challenges</li>
+      </ul>
+    </section>
+
+    <section id="reflection">
+      <h2>Reflection</h2>
+      <img src="https://uploads.onecompiler.io/44376gscy/443ur622n/image-1742270605614.jpg" class="img-banner" />
+      <p>This course taught me the importance of communication in both professional and personal life. I realized that technical knowledge is valuable, but communication makes it more effective.</p>
+    </section>
+
+    <section id="achievements">
+  <h2>Achievements</h2>
+
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/team-leader-qualities11png.png" />
+    <p><strong>Smart India Hackathon:</strong> Participated as a team leader and designed AI-based solutions for real-world problems.</p>
+  </div>
+
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/443ur622n/trofe.jpg" />
+    <p><strong>Ideathon Winner:</strong> Awarded for presenting innovative ideas focused on sustainability and automation.</p>
+  </div>
+
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/443ur622n/WhatsApp%20Image%202025-10-30%20at%2011.57.27%20PM.jpg" />
+    <p><strong>Team Achievement:</strong> Successfully collaborated and presented impactful project solutions.</p>
+  </div>
+
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/443vdyt35/4642.jpg" />
+    <p><strong>Project Showcase:</strong> Demonstrated innovative working models solving real-life challenges.</p>
+  </div>
+
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/443vdyt35/Participation%20Certificate%20-%20Shivraj%20Shivaji%20Patil%201jpg.jpg" />
+    <p><strong>Participation Certificate:</strong> Received for active participation in technical events and competitions.</p>
+  </div>
+
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/443vdyt35/certificate%203jpg.jpg" />
+    <p><strong>Certification:</strong> Successfully completed a certified program enhancing technical and problem-solving skills.</p>
+  </div>
+
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/443vdyt35/certificate%202.jpg" />
+    <p><strong>Skill Development:</strong> Gained hands-on experience through certified learning modules.</p>
+  </div>
+
+<div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/buildwithtrae-shivraj-shivaj.png" />
+    <p><strong>Skill Development:</strong><strong> Build With TRAE Hackathon Certificate</strong></p>
+Presented by Ajay Kumar Garg Engineering College, Ghaziabad.
+Recognized for exceptional contribution as a participant in the One Day Hackathon held on 28th March 2026.</p>
+  </div>
+
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/Hack%20Craft.1.jpg" />
+    <p><strong>Certification: HackCraft 3.0 Certificate</strong></p>
+Presented by Global Institute of Technology and Management, Gurugram.
+Participated in HackCraft 3.0, showcasing skills in innovation and technology.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/IITBHU%20Online1.jpg" />
+    <p><strong>Skill Development: Technex IIT BHU Pre-Zonal Hackathon Certificate</strong>
+Organized by Dr. K. N. Modi Institute of Engineering & Technology, Modinagar.
+Part of Team ARJUNA, participated in the PPT Submission round on 2026.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/IITBHU11.1pg.jpg" />
+    <p><strong> Technex IIT BHU Offline Round Certificate</strong>
+Organized by IIT (BHU), Varanasi & Dr. K. N. Modi Institute of Engineering & Technology.
+Participated as Team ARJUNA in the Offline round held in 2026.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/MasterX_certificate11.png" />"
+    <p><strong>Achievements Certification: MasterX Hackathon Certificate of Appreciation</strong>
+Presented by Masters' Union and Hack Briven.
+Awarded for active participation in the MasterX Hackathon on 29th March 2026 at Masters' Union CDS Campus.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/RIFTI.11jpg.jpg" />
+    <p><strong>RIFT '26 Hackathon Participation:</strong> Participated in the RIFT '26 Hackathon organized by Physics Wallah Institute of Innovation.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/SnowStorm%20Hackthon11pg.jpg" />
+    <p><strong>SnowStorm Hackathon Participation:</strong> Showcased technical skills in the SnowStorm Hackathon organized by Tech4Hack.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/Technova20261jpg.jpg" />
+    <p><strong>TechNova 2026 Participation:</strong> Part of Team ARJUNA from ADCET in TechNova 2026 at HRIT University.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/Technova20261jpg.jpg" />
+    <p><strong> Build With TRAE Hackathon Participation:</strong> Recognized for exceptional contribution in the one-day hackathon at Ajay Kumar Garg Engineering College</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/iiit%20sri%20cityjpg.jpg" />
+    <p><strong> 36 Hours of Innovation at Cosmix Hackathon:</strong> participated in the Cosmix Hackathon, a grueling yet rewarding 36-hour challenge held as part of Abhisarga 2026 at the Indian Institute of Information Technology Sri City, Chittoor.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/44jfn65s2/xyz.png" />
+    <p><strong> Certificate of Appreciation – DevTown:</strong> Awarded for active participation and valuable contributions to the community, reflecting continuous learning and engagement.</p>
+  </div>
+  
+  <div class="achievement-card">
+    <img src="https://uploads.onecompiler.io/44376gscy/443vdyt35/certificate%201-0.jpg" />
+    <p><strong>Achievement Certificate:</strong> Recognized for dedication and successful completion of the program.</p>
+  </div>
+
+</section>
+    <section id="contact">
+  <h2>Contact Information</h2>
+  <div class="contact-card">
+    
+    <p><i class="fas fa-user"></i> <strong>Name:</strong> Shivraj Shivaji Patil</p>
+    
+    <p><i class="fas fa-phone"></i> 
+      <strong>Mobile:</strong> 
+      <a href="tel:+918767493503">+91 87674 93503</a>
+    </p>
+    
+    <p><i class="fab fa-linkedin"></i> 
+      <strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/shivraj-patil-a16b79278" target="_blank">
+        Visit Profile
+      </a>
+    </p>
+    
+    <p><i class="fab fa-github"></i> 
+      <strong>GitHub:</strong> 
+      <a href="https://github.com/lifeking8080-lgtm" target="_blank">
+        lifeking8080-lgtm
+      </a>
+    </p>
+
+  </div>
+</section>
+  </main>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
